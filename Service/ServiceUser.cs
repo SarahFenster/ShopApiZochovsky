@@ -40,7 +40,7 @@ namespace Service
             return  await repository.Login(UserName, Password);
         }
 
-        public async Task UpdateUser(int id, User value)
+        public async Task UpdateUser(int id, User value)//return user
         {
            await repository.UpdateUser(id, value);
         }
